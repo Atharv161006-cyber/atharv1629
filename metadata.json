@@ -1,0 +1,7 @@
+{
+  "name": "ShopEZ - Intelligent E-commerce Platform",
+  "description": "A premium one-stop shop featuring AI-powered product insights, seamless browsing across categories, and a streamlined checkout experience.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
