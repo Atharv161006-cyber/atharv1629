@@ -2,7 +2,7 @@ import { Product } from './types';
 
 export const CATEGORIES = ['All', 'Electronics', 'Women\'s Fashion', 'Men\'s Fashion', 'Home & Kitchen', 'Beauty', 'Sports', 'Footwear', 'Groceries', 'Books'];
 
-// Hardcoded products with real Amazon India data
+// Products with reliable Unsplash images
 export const PRODUCTS: Product[] = [
   {
     id: '1',
@@ -10,7 +10,7 @@ export const PRODUCTS: Product[] = [
     category: 'Home & Kitchen',
     price: 8.37,
     description: 'Handcrafted pure copper water bottle with leak-proof cap. Promotes Ayurvedic health benefits and keeps water naturally cool.',
-    image: 'https://m.media-amazon.com/images/I/61VkL8QQPNL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=600&fit=crop',
     rating: 4.6,
     reviews: 1240
   },
@@ -20,7 +20,7 @@ export const PRODUCTS: Product[] = [
     category: 'Electronics',
     price: 15.55,
     description: 'True wireless earbuds with 13mm dynamic drivers for deep bass. 30 hours of total playtime and IPX5 water resistance.',
-    image: 'https://m.media-amazon.com/images/I/61KNJav3S9L._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&h=600&fit=crop',
     rating: 4.4,
     reviews: 3500
   },
@@ -30,7 +30,7 @@ export const PRODUCTS: Product[] = [
     category: 'Women\'s Fashion',
     price: 106.59,
     description: 'Traditional Kanchipuram style silk blend saree with intricate golden zari work. Includes matching blouse piece.',
-    image: 'https://m.media-amazon.com/images/I/91pWQhD7SQL._SY879_.jpg',
+    image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&h=600&fit=crop',
     rating: 4.8,
     reviews: 210
   },
@@ -40,7 +40,7 @@ export const PRODUCTS: Product[] = [
     category: 'Footwear',
     price: 11.96,
     description: 'Comfortable slip-on loafers made from premium synthetic leather. Breathable lining and durable rubber sole for daily wear.',
-    image: 'https://m.media-amazon.com/images/I/71VkRR0XjgL._SY695_.jpg',
+    image: 'https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=600&h=600&fit=crop',
     rating: 4.2,
     reviews: 850
   },
@@ -50,7 +50,7 @@ export const PRODUCTS: Product[] = [
     category: 'Beauty',
     price: 3.58,
     description: 'Advanced Vitamin C serum with Hyaluronic Acid for skin brightening and anti-aging. Suitable for all skin types.',
-    image: 'https://m.media-amazon.com/images/I/41fkqTP+SkL._SX300_SY300_QL70_FMwebp_.jpg',
+    image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&h=600&fit=crop',
     rating: 4.5,
     reviews: 1800
   },
@@ -60,7 +60,7 @@ export const PRODUCTS: Product[] = [
     category: 'Sports',
     price: 7.17,
     description: '6mm thick TPE yoga mat with non-slip texture. Eco-friendly, sweat-resistant, and comes with a carrying strap.',
-    image: 'https://m.media-amazon.com/images/I/71xPCGS+oDL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&h=600&fit=crop',
     rating: 4.7,
     reviews: 450
   },
@@ -70,7 +70,7 @@ export const PRODUCTS: Product[] = [
     category: 'Home & Kitchen',
     price: 41.91,
     description: '4.5L capacity air fryer with 8 preset programs. Uses 90% less oil for healthy and crispy frying.',
-    image: 'https://m.media-amazon.com/images/I/61Zy8QQHFSL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop',
     rating: 4.7,
     reviews: 1100
   },
@@ -80,7 +80,7 @@ export const PRODUCTS: Product[] = [
     category: 'Electronics',
     price: 299.40,
     description: 'Stunning 4K display with HDR10 support. Built-in Google Assistant and all popular streaming apps.',
-    image: 'https://m.media-amazon.com/images/I/81Zy8QQHFSL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=600&h=600&fit=crop',
     rating: 4.5,
     reviews: 3400
   },
@@ -90,7 +90,7 @@ export const PRODUCTS: Product[] = [
     category: 'Home & Kitchen',
     price: 23.94,
     description: 'King-size 100% cotton bedsheet with two pillow covers. 300 thread count for a soft and luxurious feel.',
-    image: 'https://m.media-amazon.com/images/I/91xtWZqpJeL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=600&fit=crop',
     rating: 4.5,
     reviews: 600
   },
@@ -100,7 +100,7 @@ export const PRODUCTS: Product[] = [
     category: 'Electronics',
     price: 19.16,
     description: 'High-capacity power bank with 22.5W fast charging. Dual USB output and Type-C input for multi-device charging.',
-    image: 'https://m.media-amazon.com/images/I/61gzVi+QHSL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&h=600&fit=crop',
     rating: 4.3,
     reviews: 2100
   },
@@ -110,7 +110,7 @@ export const PRODUCTS: Product[] = [
     category: 'Women\'s Fashion',
     price: 10.77,
     description: 'Straight-fit cotton kurti with delicate hand embroidery on the neck and sleeves. Ideal for office or casual wear.',
-    image: 'https://m.media-amazon.com/images/I/71xGZQqLjyL._SY879_.jpg',
+    image: 'https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=600&h=600&fit=crop',
     rating: 4.4,
     reviews: 430
   },
@@ -120,7 +120,7 @@ export const PRODUCTS: Product[] = [
     category: 'Footwear',
     price: 29.94,
     description: 'Waterproof hiking boots with high-traction sole and ankle support. Built for tough terrains and long treks.',
-    image: 'https://m.media-amazon.com/images/I/71Hy+QQHFSL._SY695_.jpg',
+    image: 'https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=600&h=600&fit=crop',
     rating: 4.7,
     reviews: 180
   },
@@ -130,7 +130,7 @@ export const PRODUCTS: Product[] = [
     category: 'Beauty',
     price: 5.38,
     description: 'Deep conditioning hair mask enriched with Moroccan Argan oil. Repairs damaged hair and adds intense shine.',
-    image: 'https://m.media-amazon.com/images/I/61Zy8QQHFSL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&h=600&fit=crop',
     rating: 4.6,
     reviews: 950
   },
@@ -140,7 +140,7 @@ export const PRODUCTS: Product[] = [
     category: 'Sports',
     price: 15.55,
     description: 'Lightweight carbon fiber badminton racket with high tension strings. Designed for power and precision.',
-    image: 'https://m.media-amazon.com/images/I/61Zy8QQHFSL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=600&h=600&fit=crop',
     rating: 4.5,
     reviews: 280
   },
@@ -150,7 +150,7 @@ export const PRODUCTS: Product[] = [
     category: 'Sports',
     price: 22.75,
     description: 'Handcrafted Kashmir willow cricket bat with a thick edge and large sweet spot. Ideal for club matches.',
-    image: 'https://m.media-amazon.com/images/I/61Zy8QQHFSL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=600&h=600&fit=crop',
     rating: 4.6,
     reviews: 310
   },
@@ -160,7 +160,7 @@ export const PRODUCTS: Product[] = [
     category: 'Groceries',
     price: 8.37,
     description: 'Extra-long grain aged Basmati rice. Perfect for biryanis and pulaos with its distinct aroma.',
-    image: 'https://m.media-amazon.com/images/I/71qhKPl3ySL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&h=600&fit=crop',
     rating: 4.7,
     reviews: 890
   },
@@ -170,7 +170,7 @@ export const PRODUCTS: Product[] = [
     category: 'Home & Kitchen',
     price: 29.94,
     description: '3-piece non-stick set including a tawa, fry pan, and kadhai. PFOA-free coating for healthy cooking.',
-    image: 'https://m.media-amazon.com/images/I/71xPCGS+oDL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop',
     rating: 4.4,
     reviews: 750
   },
@@ -180,7 +180,7 @@ export const PRODUCTS: Product[] = [
     category: 'Electronics',
     price: 4.78,
     description: 'Ergonomic wireless mouse with 1600 DPI sensitivity. Plug-and-play with a tiny USB receiver.',
-    image: 'https://m.media-amazon.com/images/I/61KNJav3S9L._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&h=600&fit=crop',
     rating: 4.2,
     reviews: 1500
   },
@@ -190,7 +190,7 @@ export const PRODUCTS: Product[] = [
     category: 'Men\'s Fashion',
     price: 19.16,
     description: 'Breathable 100% linen shirt in a relaxed fit. Perfect for staying cool and stylish in the heat.',
-    image: 'https://m.media-amazon.com/images/I/71VkRR0XjgL._SY695_.jpg',
+    image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=600&fit=crop',
     rating: 4.5,
     reviews: 240
   },
@@ -200,7 +200,7 @@ export const PRODUCTS: Product[] = [
     category: 'Women\'s Fashion',
     price: 21.55,
     description: 'Flowy georgette maxi dress with a vibrant floral print. Features a cinched waist and ruffled hem.',
-    image: 'https://m.media-amazon.com/images/I/71xGZQqLjyL._SY879_.jpg',
+    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&h=600&fit=crop',
     rating: 4.6,
     reviews: 180
   },
@@ -210,7 +210,7 @@ export const PRODUCTS: Product[] = [
     category: 'Footwear',
     price: 16.76,
     description: 'Lightweight walking shoes with memory foam insole. Breathable mesh upper for all-day comfort.',
-    image: 'https://m.media-amazon.com/images/I/71Hy+QQHFSL._SY695_.jpg',
+    image: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=600&h=600&fit=crop',
     rating: 4.4,
     reviews: 650
   },
@@ -220,7 +220,7 @@ export const PRODUCTS: Product[] = [
     category: 'Beauty',
     price: 2.98,
     description: 'Deep cleansing face wash with activated charcoal. Removes dirt, oil, and impurities for clear skin.',
-    image: 'https://m.media-amazon.com/images/I/41fkqTP+SkL._SX300_SY300_QL70_FMwebp_.jpg',
+    image: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop',
     rating: 4.3,
     reviews: 1100
   },
@@ -230,7 +230,7 @@ export const PRODUCTS: Product[] = [
     category: 'Sports',
     price: 53.89,
     description: 'Space-saving adjustable dumbbells. Change weights easily from 2.5kg to 12.5kg with a simple dial.',
-    image: 'https://m.media-amazon.com/images/I/71xPCGS+oDL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&h=600&fit=crop',
     rating: 4.8,
     reviews: 150
   },
@@ -240,7 +240,7 @@ export const PRODUCTS: Product[] = [
     category: 'Men\'s Fashion',
     price: 15.55,
     description: 'Slim-fit cotton chinos with a hint of stretch. Versatile design suitable for both formal and casual occasions.',
-    image: 'https://m.media-amazon.com/images/I/71VkRR0XjgL._SY695_.jpg',
+    image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&h=600&fit=crop',
     rating: 4.3,
     reviews: 520
   },
@@ -250,7 +250,7 @@ export const PRODUCTS: Product[] = [
     category: 'Beauty',
     price: 4.18,
     description: 'Long-lasting matte lipstick with a creamy texture. Enriched with Vitamin E to keep lips hydrated.',
-    image: 'https://m.media-amazon.com/images/I/41fkqTP+SkL._SX300_SY300_QL70_FMwebp_.jpg',
+    image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=600&h=600&fit=crop',
     rating: 4.4,
     reviews: 1200
   },
@@ -260,7 +260,7 @@ export const PRODUCTS: Product[] = [
     category: 'Groceries',
     price: 7.17,
     description: 'First flush organic Darjeeling tea leaves. Known for its delicate floral aroma and muscatel flavor.',
-    image: 'https://m.media-amazon.com/images/I/71Zy8QQHFSL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=600&h=600&fit=crop',
     rating: 4.8,
     reviews: 140
   },
@@ -270,7 +270,7 @@ export const PRODUCTS: Product[] = [
     category: 'Books',
     price: 3.58,
     description: 'A comprehensive guide to the history and culture of Ancient India. Perfect for students and history enthusiasts.',
-    image: 'https://m.media-amazon.com/images/I/81XHZZ7LFSL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&h=600&fit=crop',
     rating: 4.6,
     reviews: 150
   },
@@ -280,7 +280,7 @@ export const PRODUCTS: Product[] = [
     category: 'Books',
     price: 5.38,
     description: 'A beautifully illustrated cookbook featuring over 100 authentic recipes from across India.',
-    image: 'https://m.media-amazon.com/images/I/81XHZZ7LFSL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&h=600&fit=crop',
     rating: 4.9,
     reviews: 85
   },
@@ -290,7 +290,7 @@ export const PRODUCTS: Product[] = [
     category: 'Groceries',
     price: 5.39,
     description: 'Authentic blend of Turmeric, Cumin, Coriander, and Garam Masala sourced from the foothills of the Himalayas.',
-    image: 'https://m.media-amazon.com/images/I/71qhKPl3ySL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1596040033229-a0b3b46fe6b6?w=600&h=600&fit=crop',
     rating: 4.9,
     reviews: 320
   },
@@ -300,7 +300,7 @@ export const PRODUCTS: Product[] = [
     category: 'Books',
     price: 3.58,
     description: 'A practical guide to yoga asanas and meditation for stress relief in the modern world.',
-    image: 'https://m.media-amazon.com/images/I/81XHZZ7LFSL._SL1500_.jpg',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop',
     rating: 4.8,
     reviews: 120
   }
