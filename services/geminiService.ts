@@ -1,16 +1,24 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
 import { Product, AIInsight } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "" });
+const API_KEY = process.env.API_KEY || process.env.GEMINI_API_KEY || "";
+const ai = API_KEY ? new GoogleGenAI({ apiKey: API_KEY }) : null;
 
 export const getProductInsight = async (product: Product): Promise<AIInsight> => {
+  // Return fallback if no API key
+  if (!ai) {
+    return {
+      reason: `${product.name} offers excellent value with premium features and reliable performance.`,
+      bestFor: "Anyone looking for quality products at competitive prices."
+    };
+  }
+
   try {
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",
       contents: `Provide a quick expert insight for this product: ${product.name}. 
       Description: ${product.description}. 
-      Price: $${product.price}.`,
+      Price: ${product.price}.`,
       config: {
         responseMimeType: "application/json",
         responseSchema: {
@@ -28,19 +36,23 @@ export const getProductInsight = async (product: Product): Promise<AIInsight> =>
   } catch (error) {
     console.error("Gemini Error:", error);
     return {
-      reason: "Premium build quality with top-tier performance benchmarks.",
-      bestFor: "Tech enthusiasts looking for the latest innovations."
+      reason: `${product.name} combines quality craftsmanship with modern design.`,
+      bestFor: "Customers seeking reliable products with great reviews."
     };
   }
 };
 
 export const getComparisonInsight = async (p1: Product, p2: Product): Promise<string> => {
+  if (!ai) {
+    return "AI comparison requires API key configuration.";
+  }
+
   try {
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",
       contents: `Compare these two products briefly and tell me which is better for value vs performance: 
-      1. ${p1.name} ($${p1.price})
-      2. ${p2.name} ($${p2.price})
+      1. ${p1.name} (${p1.price})
+      2. ${p2.name} (${p2.price})
       Keep it to 3 concise bullet points.`,
       config: {
         temperature: 0.7,
@@ -54,6 +66,10 @@ export const getComparisonInsight = async (p1: Product, p2: Product): Promise<st
 };
 
 export const searchByImage = async (base64Image: string): Promise<string> => {
+  if (!ai) {
+    return "";
+  }
+
   try {
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",
