@@ -156,6 +156,12 @@ const App: React.FC = () => {
     }, 2000);
   };
 
+  const cancelOrder = (orderId: string) => {
+    setOrders(prev => prev.map(order => 
+      order.id === orderId ? { ...order, status: 'Cancelled' } : order
+    ));
+  };
+
   return (
     <div className="min-h-screen bg-white text-black transition-colors">
       <Navbar 
@@ -512,11 +518,18 @@ const App: React.FC = () => {
 
                     <div className="flex flex-wrap justify-between items-center pt-10 border-t border-gray-50 gap-8">
                       <div className="flex items-center gap-4">
-                        <div className="flex h-12 items-center px-6 rounded-2xl bg-gray-50 text-black font-black text-sm border border-gray-100">
-                          <span className="w-2 h-2 rounded-full bg-black animate-pulse mr-3"></span>
+                        <div className={`flex h-12 items-center px-6 rounded-2xl font-black text-sm border ${order.status === 'Cancelled' ? 'bg-red-50 text-red-600 border-red-100' : 'bg-gray-50 text-black border-gray-100'}`}>
+                          <span className={`w-2 h-2 rounded-full mr-3 ${order.status === 'Cancelled' ? 'bg-red-600' : 'bg-black animate-pulse'}`}></span>
                           {order.status}
                         </div>
-                        <button className="text-gray-400 hover:text-black font-black text-xs uppercase tracking-widest transition-colors">Order Details</button>
+                        {order.status !== 'Cancelled' && order.status !== 'Delivered' && (
+                          <button 
+                            onClick={() => cancelOrder(order.id)}
+                            className="text-red-500 hover:text-red-700 font-black text-xs uppercase tracking-widest transition-colors"
+                          >
+                            Cancel Order
+                          </button>
+                        )}
                       </div>
                       <div className="text-right">
                         <div className="text-3xl font-black text-gray-900 tracking-tight">
